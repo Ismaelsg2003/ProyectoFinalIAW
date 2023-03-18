@@ -64,6 +64,7 @@ class ProductoDAO {
         
     }
 
+    //Método que borra un producto dado su id.
     public function borrarprod($id){
         $stmt= $this->db_con->prepare ("Delete from Productos where id_producto=$id");
         $stmt->setFetchMode(PDO::FETCH_ASSOC);

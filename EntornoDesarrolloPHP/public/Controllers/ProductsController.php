@@ -61,6 +61,10 @@ class ProductController {
         }
     }
 
+    /*
+    Metodo mediante el cual se obtiene un producto de la base de datos buscandolo por su Identificador que obtendremos mediante
+    el metodo GET.
+    */
     public function getProductById(){
         include_once 'models/productos.php';
         if (isset($_GET['id_product'])){
@@ -70,6 +74,9 @@ class ProductController {
         }
     }
 
+    /*
+    Metodo con el que tomando el valor del Identificador, lo agregaremos al array $_SESSION['carrito'].
+    */
     public function addCarrito(){
         if (isset($_GET['id_product'])){
             array_push($_SESSION['carrito'],$_GET['id_product']);  
@@ -81,6 +88,9 @@ class ProductController {
         }
     }
 
+    /*
+    Metodo que recorre nuestro array $_SESSION['carrito'] y va guardando las IDs de los productos del carrito en un nuevo array.
+    */
     public function verCarrito(){
         include_once 'models/productos.php';
         $pDAO=new ProductoDAO();
@@ -92,6 +102,9 @@ class ProductController {
         View::show("mostrarcarrito", $arrayCarrito);
     }
 
+    /*
+    Metodo con el que se borra un producto de la base de datos tomando el valor del Identificador.
+    */
     public function borrarproducto(){
         include_once 'models/productos.php';
         if (isset($_GET['id_product'])){

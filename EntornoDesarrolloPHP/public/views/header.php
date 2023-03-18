@@ -42,9 +42,6 @@ if(!isset($_SESSION['usuario'])){
           <li class="nav-item"><a href="index.php?controller=ProductController&action=verCarrito" class="nav-link"><img src="assets/carrito.png" style="width: 30px;height:30px;"></a></li>';
         }
        ?>
-        <!-- <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>-->
       </ul>
     </header>
   </div>
