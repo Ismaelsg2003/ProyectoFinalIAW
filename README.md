@@ -102,5 +102,5 @@ En nuestra máquina virtual, con **docker inspect entornodesarrollophp\_mariadb\
 Una vez configurada la máquina, nos iremos al navegador y buscaremos el dominio del servidor: **informatica.iesalbarregas.com:14001**. El puerto dependerá del que tenga asignado el alumno.
 
 <p align="center">
-  <img src="fotos/11.jpg">
+  <img src="fotos/brave_JENDNMjxzR.jpg">
 </p>
