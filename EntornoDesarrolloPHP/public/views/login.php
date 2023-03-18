@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <style>
-        body{
-        background-image: url("../assets/fondo.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        }
         form {
         margin: 20px auto;
         width: 300px;
